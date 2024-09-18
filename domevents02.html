@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            width: 500px;
+            height: 200px;
+            background-color: purple;
+            margin: 5rem auto;
+            border-radius: 10px;
+
+        }
+       .wrapper p{
+            padding: 30px;
+            text-align: center;
+            overflow: hidden;
+            height: 60px;
+            
+        }
+
+  .btn{
+  text-align: center;
+  }
+
+        button{
+            padding: 5px 20px;
+            border: none;
+            border-radius: 5px;
+            margin: 0 2rem; 
+            font-size: 15px;
+            color: white;
+            background-color:maroon;
+        }
+        .nav{
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .dark{
+            padding: 7px 20px;
+            border: none;
+            border-radius: 5px;
+            margin: 0 2rem; 
+            font-size: 18px;
+            color: white;
+            background-color:rgb(229, 165, 1);
+        }
+        input{
+            font-size: 17px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, quas. Vel at ad, officia necessitatibus aperiam, dolorem temporibus doloribus in facere recusandae voluptatemsit amet consectetur adipisicing elit. Voluptate, quas. Vel at ad, officia necessitatibus aperiam, dolorem temporibus doloribus in facere recusandae voluptatem.</p>
+      <div class="btn">
+          <button onclick="hide()">Hide</button>
+          <button onclick="show()">Show</button>
+      </div>
+    </div>
+
+
+    <div class="nav">
+        <input type="text" id="input" >
+        <button onclick="italic()">italic</button>
+        <button onclick="bold()">bold</button>
+        <button onclick="upper()">upperCase</button>
+        <button onclick="lower()">lowerCase</button>
+        <button onclick="add()"> add</button>
+    </div>
+
+    
+    <div class="nav">
+        <button class="dark" onclick="dark() " ondblclick="light()">  dark</button>
+    </div>
+    
+    <div class="heading"> </div>
+
+
+    <script>
+      let divs = document.querySelector(".wrapper")
+     let para = document.querySelector("p")
+
+      function hide(){
+      para.innerHTML=""
+      }
+      function show(){
+      para.innerHTML="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, quas. Vel at ad, officia necessitatibus aperiam, dolorem temporibus doloribus in facere recusandaeipsum dolor sit amet consectetur adipisicing elit. Voluptate, quas. Vel at ad, officia necessitatibus aperiam, dolorem temporibus doloribus in facere recusandae voluptatem."
+      }
+
+
+
+      /////////////////////////////////////////
+
+
+         let inputVal = document.querySelector("input");
+         let head = document.querySelector(".heading");
+        //  let addVal = document.createElement("h2");
+         
+         
+         function italic(){
+             inputVal.style.fontStyle="Italic";
+            }
+            function bold(){
+                inputVal.style.fontWeight="bold";
+            }
+            function upper(){
+                inputVal.style.textTransform="uppercase";
+            }
+            function lower(){
+                inputVal.style.textTransform="lowercase";
+            }
+
+           
+            
+            function add(){
+                let addVal = document.createElement("h2");
+                let btn1 = document.createElement("button");
+                  btn1.innerHTML="edit"
+                  let btn2 = document.createElement("button");
+                  btn2.innerHTML="delete"
+            addVal.innerHTML = inputVal.value
+            addVal.style="color:green"
+
+
+            btn1.onclick= function(){
+             inputVal.value = addVal.innerHTML 
+             addVal.innerHTML = inputVal.value
+                 
+             }
+
+            btn2.onclick= function() {
+            
+                head.remove(addVal) 
+             }
+
+            
+
+            head.append(addVal)
+            head.append(btn1)
+            head.append(btn2)
+
+            
+       }
+
+    //    head.append(addVal)
+
+
+/////////////////////////////////////////////////////
+
+      let body = document.querySelector("body");
+         function dark(){
+           body.style="background:black"
+         }
+         function light(){
+           body.style="background:white"
+         }
+
+
+
+    </script>
+
+</body>
+</html>

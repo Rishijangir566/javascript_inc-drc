@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>    
+
+
+
+      // object handle in function
+
+      const myProfile ={
+                name:"Rishi",
+                prize:400,
+                id:93764,
+      }
+
+      function objectHandle(myprofile){
+        console.log(`name is ${myprofile.name} prize is ${myprofile.prize} id is ${myprofile.id}`)
+      }
+      objectHandle(myProfile)
+
+      // no 2
+
+      function objectHandle(anyobject){
+        console.log(`name is ${anyobject.name} prize is ${anyobject.prize} id is ${anyobject.id}`)
+      }
+      objectHandle({
+        name:"shikhar",
+        prize:300,
+        id:1231,
+      })
+
+    //arry handle in function
+
+     function sum(... num){
+        console.log(num)
+        console.log(num[2])
+     }
+     sum(100,2000,300,400)
+
+
+     function sum( val1,val2 ,...num){
+        console.log(num)
+        console.log(num[2])
+     }
+     sum(100,123,1211,234)
+
+
+// no 2
+  
+const newArray=[12,200,34,234,400];
+
+function arrayHandle(getArray){
+   console.log(getArray[3])
+}
+arrayHandle(newArray)
+
+
+function arrayHandle(getArray){
+   console.log(getArray[2])
+}
+arrayHandle([12,123,1234,12345])
+
+
+
+     // arrow function 
+     
+      let arrFunction = ()=>{
+        console.log("hello world")
+      }
+      arrFunction()
+
+
+
+
+
+//  question no 1
+
+            function hello (r){
+                 let pie=3.14;
+                return pie*r*r
+             }
+                
+                console.log(hello(10))
+
+  // question no 2
+
+            function hello2 (l,b){
+                 
+                return 2*(l+b)
+             }
+                
+                console.log(hello2(10,5))
+
+//   question no 3
+            function hello3 (id,name, salary){
+                 
+                 console.log(`id ${id} `)
+                 console.log(`name ${name}`)
+                 console.log(`salary ${salary}`)
+             }
+                
+                hello3("7264","rahul","300")
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+
+
+
+    <script>
+
+
+
+    let num1 = 2;
+    let num2 = 3;
+     let oper = prompt("oper enter")
+
+
+    switch (oper){
+        case "+" :{
+            let plus = num1+num2;
+            console.log("the value is "+ plus)
+        }
+        break;
+        case "-":{
+            let plus = num1-num2;
+            console.log("the value is "+ plus)        }
+        break;
+        case "*" :{
+            let plus = num1*num2;
+            console.log("the value is "+ plus)        }
+        break;
+        case "/" :{
+            let plus = num1/num2;
+            console.log("the value is "+ plus)        }
+        break;
+         default :{
+            console.log("not a right value")
+         }
+    }
+
+
+    let one = Number(prompt("enter a value"));
+    let two = Number(prompt("enter a value"));
+    let operation= prompt("enter opration");
+
+   if (operation=="+"){
+     var data = one+two;
+     console.log("the value is "+data)
+   }
+   else if (operation=="-"){
+     let data = one-two;
+     console.log("the value is "+data)
+   }
+   else if (operation=="*"){
+     let data = one*two;
+     console.log("the value is "+data)
+   }
+   else if (operation=="/"){
+     let data = one/two;
+     console.log("the value is "+data)
+   }
+   else if (operation=="%"){
+     let data = one%two;
+     console.log("the value is "+data)
+   }
+   else {
+    console.log("the value si not correct")
+   }
+
+    </script>
+ </body>
+ </html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach array methods</title>
+</head>
+<body>
+    
+<script>
+            // let arr = ["sony", "mony", "tinu" , "cinu", "rinu"  ]
+      
+            //     arr.forEach((name)=>{
+            //           document.write(name+"<br>")
+            //     })
+
+            //     arr.map((name)=>{
+            //           document.write(name+"<br>")
+            //     })
+
+                // fill method
+
+            //     let a =[1,2,3,4,5]
+            // //   console.log(  a.fill(0) )  
+            // //   console.log(  a.fill(0,2) )  
+            //   console.log(  a.fill(0,1,3) )  
+
+            // let a =[1,2,3,4,5]
+            // a.filter((word)=>{
+            //     console.log(a.length>=2)
+            // })
+ 
+            // every 
+
+            // let a =[11,21,31,4,5]
+            //    a.every((n)=>{
+            //     console.log(n>3)
+            //    })
+
+            // some
+        //     let a =[11,22,31,4,50]
+        //   a.some((num)=>{
+        //      if( num%2==0){
+        //          console.log(num)
+        //      }
+        // })
+
+                 // reduce method
+
+            //     let arr2 =[1,2,3,4]
+            //    let newArr = arr2.reduce((n,n2 )=>{
+            //         return n +n2
+            //     })
+                
+            //     document.write(newArr)
+                
+
+        // filter method
+
+        // let arr =[1,15,17,3,4,2,32];
+        // let newArr= arr.filter((num)=>{
+        //     return num>10
+        // })
+        //     document.write(newArr)
+
+        // map method 
+
+//         let arr =[1,6,3,4,2,5];
+//   let newArr = arr.map((num)=>{
+//     return num*num
+//   })
+//   document.write(newArr);
+
+//   document.write("<br>");
+  
+//   let arr2 =[1,15,17,3,4,2,32];
+//   let newArr2 = arr2.map((num , index)=>{
+//       return num+index
+//     })
+//     document.write(newArr2);
+
+    //  let arr2 =["ritik","mohini","rohan jangid","rishab", "ranveer"];
+    //          let newArr2 = arr2.map((num )=>{
+    //             return(num.length)
+    //                       })
+    //                  document.write(newArr2);
+
+        // forEach method
+    //  let arr2 =["ritik","mohini","rishab", "ranveer"];
+    // let newArr= arr2.forEach((name, index)=>{
+    //     return ( name + index)
+    //  })
+    // console.log(newArr) // dose not excute return value
+
+
+
+
+
+// obj 
+          let arr=[
+            {
+                name:"rishi",
+                age :12,
+                gender:"male",
+             },
+ 
+             {
+                name:"somesh",
+                age :12,
+                gender:"male",
+             },
+ 
+             {
+                name:"ranveer",
+                age :12,
+                gender:"male",
+             },
+ 
+             {
+                name:"misthi",
+                age :12,
+                gender:"female",
+             },
+ 
+             {
+              name:"ria",
+                age :12,
+                gender:"female",
+             }];
+
+            let newArr= arr.filter((obj)=>{
+                return obj.gender == "female"
+                // console.log(obj.gender =="female") // true & false
+            })
+            console.log(newArr)
+            
+ 
+</script>
+
+
+</body>
+</html>

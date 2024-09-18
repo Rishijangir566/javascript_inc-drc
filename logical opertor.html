@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+
+// and  logical opertor
+// dono condition sahi honi chiye 
+let a=23
+let b=12
+let c=34
+
+if(a>=b && a>=c){
+    console.log("a is grater")
+  }
+  else{
+    console.log("a is not grater")
+  }
+// second condition 
+
+    if(c>=b && a<=c){
+    console.log("c is grater")
+  }
+  else{
+    console.log("c is not grater")
+  }
+
+
+  if(a<=b && b>=c){
+    console.log("b is grater ")
+}
+else if (a>=b && a>=c){
+    console.log("a is grater ")
+}
+else {
+      console.log("c is grater ")
+  }
+
+
+//   or logical opertor
+// koi bi ek condition sahi honi chiye
+
+if(a<=b || b>=c){
+    console.log("b is grater ")
+}
+else if (a>=b || a>=c){
+    console.log("a is grater ")
+}
+else {
+      console.log("c is grater ")
+  }
+
+     //   ! not logical opertor
+    // true ko false , false ko true
+
+    let p = 12
+    q = 10 
+    console.log(!(p>q))
+
+    if(p!==q){
+        console.log("p is grater")
+    }
+    else{
+        console.log("q is grater")
+    }
+
+
+    // let num = 72;
+
+    let num = 31;
+
+    if(num>=90 && num<=100){
+        console.log("frist devision")
+    }
+    else if (num>=75 && num < 89){
+        console.log("second devision")
+    }
+    else if (num>=60 && num <74){
+        console.log("third devision")
+    }
+    else if (num>=35 && num<59){
+        console.log("forth devision")       
+    }
+    else if (num<=34 ){
+        console.log("fail bachaa")       
+    }
+
+    else{
+        console.log("wrong value")       
+
+    }
+
+
+
+    let user = prompt("enter your number")
+    if (user>=1){
+        console.log("value is positive")
+    }
+   else if (user==0){
+        console.log("value is zero")
+    }
+   else {
+        console.log("value is negative")
+    }
+ 
+
+    
+    let userName = prompt("enter your name")
+    if (userName>="a" && userName<="z"){
+        console.log("value is lower case ")
+    }
+   else if (userName>="A" && userName<="Z"){
+        console.log("value is uper case")
+    }
+   else {
+        console.log("value is wrong")
+    }
+
+
+    
+// equalateral traingle     3 side equal
+// iso scalen traingle     2 side equal 
+// scalen traingle     all sides are diffrent
+
+let valueOne = prompt("enter value 1")
+let valueTwo = prompt("enter value 2")
+let valueThree = prompt("enter value 3")
+
+if(valueOne==valueTwo && valueTwo==valueThree){
+    console.log(" Equalateral Traingle  ")
+}
+else if(valueOne==valueTwo || valueTwo==valueThree || valueOne==valueThree ){
+    console.log("  Iso Scalen Traingle  ")
+}
+else{
+    console.log("Scalen Traingle ")
+}
+
+
+// 2>  profit loss
+
+// selling price   10    loss 40 ruppes
+// cost price 50
+
+
+// sp   50
+// cp   50    no profilt no loss
+
+let cp = 50
+ let sp =50
+ if(cp>sp){
+    console.log(sp-cp+"  ka loss")
+ }
+ else if(cp<sp){
+    console.log(sp-cp+"  ka profit")
+ }
+ else if(cp==sp){
+    console.log(sp-cp+" no profit and no loss")
+ }
+ else{
+    console.log("wrong value")
+ }
+
+
+ let uNum = prompt ("enter number");
+
+ if (uNum%5==0 && uNum%11==0 ){
+  console.log("the value is devisible")
+ }
+ else {
+  console.log("the value is not devisible")
+ }
+
+ // let alpha = [a,e,i,o,u]
+
+ let aName = prompt ("enter name")
+     aName = aName.toLowerCase();
+    
+ if (aName=="a"|| aName=="e"|| aName=="i"|| aName=="o"|| aName=="u"){
+  console.log("the value is vowel")
+
+ }
+ else {
+  console.log("the value is consonent")
+ }
+
+
+     </script>
+</body>
+</html>

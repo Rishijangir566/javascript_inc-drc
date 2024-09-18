@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+     let person = {
+       name : "rishi",
+       age:23,
+       add:"ringas"
+     }
+
+
+     let reverseKeys = Object.keys(person).reverse()
+     console.log(reverseKeys)
+
+     let reverseValue = Object.values(person).reverse()
+     console.log(reverseValue)
+
+   let changedValue ={};
+      
+   for (let i=0; i<reverseKeys.length ; i++){
+      changedValue[reverseKeys[i]] = reverseValue[i]
+   }
+     console.log(changedValue)
+
+       
+
+     //    object.entrise  
+
+
+
+     let obj = {
+        person:23,
+        new :"rohan"
+     }
+     
+     let val = Object.entries(obj)
+    //  console.log(val)
+
+    for(let [key , value] of Object.entries(obj)){
+        console.log(key +":" + value)
+    }
+
+
+   ///////////  //  seal method   no add no delete but value change only
+
+
+    // const object = {
+    //     num1:23
+    // }
+
+    // let number = Object.seal(object);
+    // object.num1=12;
+    // console.log(object);
+
+    // object.num2 = 123;
+    // console.log(object.num2)
+
+    // delete object.num1 
+    // console.log(object)
+
+
+
+   ////////////////// // freeze method  no add no delete and not value changed
+
+    // const object = {
+    //     num1:23
+    // }
+    
+    
+    // let number = Object.freeze(object);
+    // object.num1 = 12;
+    // console.log(object.num1)
+    // object.num2 = 123;
+    // console.log(object.num2)
+
+    //   delete object.num1 
+    //  console.log(object)
+
+
+////////     assign method //////  target and sourse value 
+
+      let target = {a:12 , b:23}
+      let source = {b:20 , c:25}
+
+
+        let returnedTarget = Object.assign(target , source);
+        console.log(returnedTarget)
+        console.log(target) // return new value of object 
+
+
+
+
+        // call bind apply methods
+
+    //   let objt = {
+         
+    //     name : "rishi",
+    //   sayHello :  function (age , city ){
+    //        return`my name is ${this.name} age is  ${age} city is  ${city}`
+    //     }
+    //   }
+
+    //  let a =  objt.sayHello.call(objt , "23" , "jaipur")
+    //   console.log(a)  
+
+    ///////// apply 
+
+    // let objt = {
+         
+    //      name : "rishi",
+    //    sayHello :  function (age , city ){
+    //         return`my name is ${this.name} age is  ${age} city is  ${city}`
+    //      }
+    //    }
+ 
+    //   let a =  objt.sayHello.apply( objt , [23 , "jaipur"])
+    //    console.log(a) 
+        
+///////////// bind
+
+      let objt = {
+         
+         name : "rishi",
+       sayHello :  function (age , city ){
+            console.log(`my name is ${this.name} age is  ${age} city is  ${city}`)
+         }
+       }
+ 
+      let a =  objt.sayHello.bind( objt , "23" , "jaipur")
+       a() 
+
+
+    </script>
+    
+</body>
+</html>

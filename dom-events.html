@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  #box{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+
+  }
+    body{
+        background-color: white;
+    }
+
+
+    #nav{
+        background-color: rgb(0, 85, 48);
+    }
+    #nav h2{
+        text-align: center;
+        padding: 1rem;
+        font-size: 2rem ;
+        cursor: pointer;
+    }
+    p{
+        background-color: red ;
+          display:none;
+    }
+
+  button {
+    padding: 10px ;
+    margin: 1rem;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 7px;
+
+  }
+    </style>
+</head>
+<body>
+      <div id="nav">
+        <h2 onclick="show()" ondblclick="hide()"> click to show panel</h2>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima corporis ab molestias necessitatibus porro vel, nam  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam repellat officia praesentium provident, animi ratione velit distinctio atque commodi rerum tempora vel quo, doloremque ab voluptas, nobis vero libero perspiciatis eveniet necessitatibus natus numquam. Eum sapiente vitae nemo nulla consectetur facere illo error inventore, id sequi minima ab quaerat reprehenderit accusamus veniam natus. Nisi accusamus, repellendus dolorum sunt veniam aut nobis impedit quod saepe magnam, architecto doloribus recusandae voluptatum incidunt nesciunt quo expedita officiis tenetur reprehenderit beatae! Excepturi necessitatibus itaque incidunt maiores natus consequatur aperiam dolore omnis numquam molestias, vitae, officiis perferendis ex tenetur eius. Asperiores iusto, ducimus earum minima ratione nihil nostrum atque odit eos dolorem sapiente eum perspiciatis ipsum quam odio veniam consequuntur soluta minus illum ullam nemo recusandae est? Esse dignissimos accusamus asperiores porro magni, at commodi qui odit sequi earum minima perspiciatis, repudiandae, quo quod? Nisi, libero sunt consequuntur vero vitae sit quis ratione optio et alias dicta odio quibusdam? Nisi odit eligendi dolores minus iure, consequuntur ad, laudantium, non quod rem dicta in ducimus. Maiores quas harum quod voluptatum facilis repudiandae, magnam nulla autem rerum a ut adipisci cupiditate quaerat provident distinctio incidunt tenetur quasi ad earum quos? Voluptates, facere. Voluptas sunt nulla reiciendis ad beatae aut dolorum quam adipisci reprehenderit repellendus maxime quisquam architecto corporis, alias voluptatem! Perferendis ullam tenetur consequatur a dignissimos doloremque harum cumque id repudiandae reiciendis! Saepe voluptates rerum sequi veniam odit. similique autem id explicabo sapiente doloremque iure.</p>
+
+
+
+
+     <!-- <div id="box">
+
+     </div> -->
+  
+     <!-- <button onclick="change()"> click me </button> -->
+     <button onclick="black()" ondblclick="black2()"> black</button>
+     <button onclick="green()" ondblclick="black2()"> green </button>
+     <button onclick="blue()" ondblclick="black2()"> blue </button>
+     <button onclick="purple()" ondblclick="black2()">purple </button>
+     <button onclick="maroon()" ondblclick="black2()"> maroon </button>
+
+     <script>
+        //     function change(){
+                  
+        //   let tar = document.getElementById("box");
+        //   tar.style="background:blue"
+
+        //     }
+
+           
+        let target = document.querySelector("body");
+
+            function black(){
+          target.style="background:black"
+            }
+
+
+            function blue(){                  
+          target.style="background:blue"
+            }
+
+            function green(){              
+          target.style="background:green"
+            }
+
+
+            function purple(){                  
+          target.style="background:purple"
+            }
+
+
+            function maroon(){                  
+          target.style="background:maroon"
+            }
+
+
+            function black2(){
+          target.style="background:white"
+            }
+
+
+      function show(){
+        //   let sho = document.getElementById("nav")
+          let para = document.querySelector("p")
+          para.style="display:block"
+      };
+
+
+      function hide(){
+        //   let sho = document.getElementById("nav")
+          let para = document.querySelector("p")
+          para.style="display:none"
+
+      }
+
+
+     </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object.keys(), Object.values(), Object.entries()
+        Object.seal(), Object.freeze(), Object.assign()
+        and shellow copy and deep copy
+        </title>
+</head>
+<body>
+    
+
+<script>
+
+      let person ={
+        name:"rishi",
+        age:23,
+        add:{
+            city:"jaipur",
+            area:"mahesh nagar"
+        }
+      }
+        //  console.log(person)
+       
+        // console.log(Object.keys(person));   //start
+    // Object.keys(person);       
+    //     console.log(person)    // not start
+  
+    // console.log(Object.values(person))   // start
+    // Object.values(person);
+    // console.log(person)    // not start
+
+
+    //   console.log(Object.entries(person.name[1]))
+
+    // Object.freeze(person)
+    // console.log(Object.isFrozen(person))
+    // person.name ="rohit"
+    // person.add.city="mumbai"
+    // person.phoneNo = "9694927623"
+    // console.log(person)
+    
+    // console.log(Object.seal(person));
+    // // console.log(Object.isSealed(person))
+    
+    // person.phoneNo = 9772336350
+    // person.name="rohit"
+    // person.add.city="mumbai"
+    // console.log(person)
+
+    // let person2 = person;
+  // let  person2 ={...person}
+  //     person2.name="rohit"
+  //      person2.add.city="london"
+  //   console.log(person)
+
+
+
+  // let  person2 = JSON.parse(JSON.stringify(person))
+  //       person2.name="rohit"
+  //      person2.add.city="london"
+  //   console.log(person)
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

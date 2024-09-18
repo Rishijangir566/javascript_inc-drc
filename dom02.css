@@ -1,0 +1,20 @@
+#wrapper{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+
+}
+
+.container{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(39, 245, 2);
+    margin: 1rem;
+    float: left;
+}
+.box {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(39, 245, 2);
+    display: none;
+}

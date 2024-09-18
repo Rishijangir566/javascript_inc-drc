@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dom02.css">
+</head>
+<body>
+      <div id="wrapper">
+    <h1>hello world</h1>
+      </div>
+
+<div class="container">
+    
+</div>
+<div class="container">
+
+</div>
+<div class="container">
+
+</div>
+<div class="container">
+
+</div>
+
+<div id="box">
+
+</div>
+<div id="box">
+
+</div>
+<div id="box">
+
+</div>
+
+      <script>
+          let wrap = document.querySelector("#wrapper")
+        //    console.log(wrap)
+           wrap.style="background:blue"
+
+
+           let cont = document.querySelectorAll(".container");
+        //    console.log(cont)
+            for (let i=0 ; i<cont.length; i++){
+                cont[i].style="background:purple"
+            }
+
+           let cont2 = document.querySelectorAll(".container")[0];
+           cont2.style="background:black"
+
+
+
+           let boxs = document.querySelectorAll(".box");
+        //    console.log(cont)
+            for (let i=0 ; i<boxs.length; i++){
+                boxs[i].style="display:block"
+            }
+
+           
+    // let boxs =  document.getElementById("box") 
+    //    let cre1 = document.createElement("div")
+    //    let cre2 = document.createElement("div")
+    //    let cre3 = document.createElement("div")
+
+    //      cre1.style="background:red , height:200px , width: 200px "
+    //      cre2.style="background:red , height:200px , width: 200px "
+    //      cre3.style="background:red , height:200px , width: 200px "
+ 
+    //    boxs.append(cre1)
+    //    boxs.append(cre2)
+    //    boxs.append(cre3)
+
+    
+
+      </script>
+</body>
+</html>

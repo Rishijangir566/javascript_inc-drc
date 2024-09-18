@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+  </head>
+  <body>
+    <div id="wrapper"></div>
+
+    <script>
+      let names = [
+        "Ranveer",
+        "Sunil",
+        "Lucky",
+        1234512345,
+        2345623456,
+        1234567890,
+      ];
+
+      //   console.log(names);
+      //   document.write(names);
+
+      // collection of pairs of key and value is an object
+
+      let person = {
+        name: "Sunil",
+        phone: 1234512345,
+        age: 25,
+      };
+
+      //DOT NOTATION
+      //   document.write(person.name); //Sunil
+
+      //ARRAY NOTATION
+      // document.write(person["name"]) //Sunil
+
+      // let name = "kuchaur";
+
+      // document.write(person[name])
+
+      //   console.log(person);
+
+      //   document.write(person); //OBJECTS CANNOT BE PRINTED USING DOCUMENT.WRITE
+
+    // for (let i in person){
+    //     document.write(i+":"+"p")
+    // }
+
+
+      //Object.keys(), Object.values(), Object.entries()
+      //Object.seal(), Object.freeze(), Object.assign()
+      //Shallow Copy, Deep Copy
+
+
+
+
+         let user = {
+          name:"rishi",
+          age:23,
+          city:"jaipur",
+          state:"raj",
+          name:"rohan"
+
+         }
+         console.log(user)
+         console.log(user.name)
+
+
+         let user2 = {
+          name:"rishi",
+          age:23,
+          city:"jaipur",
+          state:"raj",
+          marks:((m1,m2,m3)=>{
+            return m1+m2+m3
+          })
+          (10,10,10)
+
+         }
+         console.log(user2.marks)
+        //  console.log(user2.marks(10,20,30))
+
+
+         let user3 = {
+          name:"rishi",
+          age:23,
+          add:{
+            city:"jaipur",
+            state:"raj",
+            place:"office"
+          }
+
+         }
+         user3.id="hdfc"
+         console.log(user3)
+         console.log(user3.add)
+
+          let user4 = new Object ()
+          user4.fristname = "rishi";
+          user4.lastname ="jangid";
+        
+          console.log(user4)
+
+
+          // let personAll={
+          //   uName:["rishi","rohit","rahul","jigar","monu"],
+          //   age:[21,34,12,23,43],
+          //   city:["jaipur","sikar","chirava",]
+          // }
+          // console.log(personAll.uName[0]+personAll.age[0]+personAll.city[0])
+          // console.log(personAll.uName[1]+personAll.age[1]+personAll.city[1])
+          // console.log(personAll.uName[2]+personAll.age[2]+personAll.city[2])
+          // console.log(personAll.uName[3]+personAll.age[3]+personAll.city[3])
+        
+        
+          // this is costructor
+
+         function  data (n,a,c){
+          this.userName = n
+          this.age = a
+          this.city = c
+         }
+
+         let obj1 = new data ("rishi" , 21 , "jaipur")
+         let obj2 = new data ("ranveer" , 22 , "sikar")
+         console.log(obj1)
+         console.log(obj2)
+
+
+        //  this is array constructor
+        
+         let arr1 = new Array() 
+         {
+          arr1[0]="rishi",
+          arr1[1]="hello",
+          arr1[2]="javascript",
+          arr1[4]="welcome"
+         }
+
+         console.log(arr1)
+        //  console.log(arr1[3])
+
+
+    </script>
+  </body>
+</html>
