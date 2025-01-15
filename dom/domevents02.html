@@ -119,16 +119,16 @@
            
             
             function add(){
+                
                 let addVal = document.createElement("h2");
                 let btn1 = document.createElement("button");
                   btn1.innerHTML="edit"
                   let btn2 = document.createElement("button");
                   btn2.innerHTML="delete"
-            addVal.innerHTML = inputVal.value
-            addVal.style="color:green"
+                  addVal.innerHTML = inputVal.value
+                 addVal.style="color:green"
 
-
-            btn1.onclick= function(){
+             btn1.onclick= function(){
              inputVal.value = addVal.innerHTML 
              addVal.innerHTML = inputVal.value
                  

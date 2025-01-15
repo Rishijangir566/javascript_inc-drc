@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="wrapper" style="cursor: pointer;">
+    <h2> virat kohli</h2>
+    <h2> sachin</h2>
+    <h2> sehvag</h2>
+    <h2> shikhar</h2>
+    <h2> dhoni</h2>
+    <h2> rishabh</h2>
+    <h2> rohit </h2>
+    </div>
+
+</body>
+
+<script>
+      let head = document.querySelectorAll("h2");
+      let box = document.querySelector("#wrapper");
+      let para =document.createElement("p")
+     for(let i=0; i<head.length; i++){
+         
+         head[i].addEventListener("click", function(){
+            para.innerHTML= "clicked name is : "+ head[i].innerHTML
+            // console.log(head[i])
+            // console.log(para)
+            box.append(para)
+         })
+
+     }
+
+
+</script>
+</html>
