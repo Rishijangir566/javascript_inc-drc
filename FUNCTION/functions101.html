@@ -33,16 +33,16 @@
       // function sum(a, b) {
       //   document.write(a + b + "<br>");
       // }
-      //   sum(10, 20);
-      //   sum(50, 60);
+      //   sum(10, 20); // 30
+      //   sum(50, 60); //110
 
       //   function checkName(name) {
       //     if (name.length % 2 === 0) document.write("Batman");
       //     else document.write("Deadpool");
       //   }
-      //   checkName("Pankaj");
+      //   checkName("Pankaj"); // Batman
 
-      //   checkName(["Harendra", "Shikhar", "Ranveer", "Lucky", "Rishabh", "Rohit"]);
+      //   checkName(["Harendra", "Shikhar", "Ranveer", "Lucky", "Rishabh", "Rohit"]); //betman
 
       //   sum(100);
       //   sum();
@@ -50,17 +50,17 @@
       //   function sum(a = 14, b = 50) {
       //     document.write(a + b + "<br>");
       //   }
-      // //   sum(10, 20);
-      // //   sum(100)
-      //   sum()
+      // //   sum(10, 20); // 30
+      // //   sum(100) // 150
+      //   sum() //64
 
       //   function sum(a = 10, b = 11) {
       //     return a + b;
       //   }
-      //   const result = sum();
-      //   document.write(result);
+      //   const result = sum(); 
+      //   document.write(result); //21
 
-      //   document.write(sum());
+      //   document.write(sum()); // 21
 
       const numbers = [2, 3, 4, 5, 7];
 
@@ -70,7 +70,7 @@
           x = x + num[i];
         }
         return x;
-      }
+      }  // 0+2,2+3,5+4,9+5,14+7  // 21
 
       function batmanVsuperman(n) {
         if (n % 2 === 0) return "Batman";
@@ -81,7 +81,7 @@
 
       document.write("My favorite superhero is " + superhero);
 
-      //callbacks
+      //callbacks  // "My favorite superhero is superman"
 
 
     </script>
